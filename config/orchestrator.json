@@ -1,24 +1,32 @@
 {
-  "name": "Development Orchestrator Framework",
-  "version": "1.0.0",
+  "name": "Nublado Orchestrator",
+  "version": "2.0.0",
   "status": "active",
+  "description": "Advanced AI Orchestration System",
   "capabilities": {
     "task_management": true,
     "parallel_execution": true,
     "multi_agent_coordination": true,
     "dynamic_agent_creation": true,
     "self_learning": true,
-    "distributed_processing": true
+    "distributed_processing": true,
+    "dependency_resolution": true,
+    "resource_optimization": true,
+    "error_recovery": true,
+    "performance_monitoring": true
   },
   "performance": {
-    "max_parallel_tasks": 10,
-    "max_agents": 20,
-    "task_queue_size": 100
+    "max_parallel_tasks": 20,
+    "max_agents": 50,
+    "task_queue_size": 1000,
+    "task_timeout": 300000,
+    "memory_limit": "2G"
   },
   "modules": {
     "agents": {
       "path": "./agents",
-      "enabled": true
+      "enabled": true,
+      "auto_scaling": true
     },
     "tasks": {
       "path": "./tasks",
@@ -27,21 +35,32 @@
     "logs": {
       "path": "./logs",
       "enabled": true,
-      "rotation": "daily"
+      "rotation": "daily",
+      "max_size": "10M",
+      "max_files": 5
     },
     "parallel_engine": {
       "path": "./parallel-engine",
-      "enabled": true
+      "enabled": true,
+      "workers": "auto"
     },
     "quantum_core": {
       "path": "./quantum-core",
-      "enabled": true
+      "enabled": true,
+      "evolution_rate": 0.1
+    },
+    "monitoring": {
+      "path": "./monitoring",
+      "enabled": true,
+      "interval": 30000
     }
   },
   "settings": {
     "log_level": "info",
-    "max_concurrent_tasks": 5,
+    "max_concurrent_tasks": 10,
     "enable_learning": true,
-    "enable_monitoring": true
+    "enable_monitoring": true,
+    "health_check_interval": 30000,
+    "auto_restart": true
   }
 }

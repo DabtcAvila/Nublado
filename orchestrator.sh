@@ -3,7 +3,7 @@
 # Orchestrator Management Script
 # Advanced process management with PM2
 
-ORCHESTRATOR_DIR="/Users/davicho/MASTER proyectos/Orchestrator"
+ORCHESTRATOR_DIR="$(dirname "$(realpath "$0")")"
 PM2_CONFIG="ecosystem.config.js"
 
 # Colors for output
