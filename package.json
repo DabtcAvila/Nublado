@@ -1,0 +1,41 @@
+{
+  "name": "dev-orchestrator-framework",
+  "version": "1.0.0",
+  "description": "Development-focused multi-agent orchestration framework with parallel processing and self-learning capabilities",
+  "main": "agents/orchestrator_controller.js",
+  "scripts": {
+    "start": "./orchestrator.sh start",
+    "stop": "./orchestrator.sh stop",
+    "restart": "./orchestrator.sh restart",
+    "status": "./orchestrator.sh status",
+    "logs": "./orchestrator.sh logs",
+    "monitor": "./orchestrator.sh monitor",
+    "health": "./orchestrator.sh health",
+    "quickstart": "./orchestrator.sh quickstart",
+    "dev": "pm2-dev start ecosystem.config.js",
+    "clean": "rm -rf logs/*.log",
+    "test": "echo \"No tests configured\"",
+    "install-pm2": "npm install -g pm2 && pm2 install pm2-logrotate",
+    "setup": "npm run install-pm2 && ./orchestrator.sh quickstart"
+  },
+  "keywords": [
+    "orchestrator",
+    "multi-agent",
+    "pm2",
+    "automation",
+    "claude",
+    "ai"
+  ],
+  "author": "Davicho",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "pm2": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
