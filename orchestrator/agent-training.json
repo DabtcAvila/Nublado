@@ -1,0 +1,239 @@
+{
+  "training_protocols": {
+    "ui_ux_designer": {
+      "best_practices": [
+        "Always follow mobile-first design principles",
+        "Ensure WCAG 2.1 AA accessibility compliance",
+        "Use consistent spacing based on 8px grid system",
+        "Implement proper color contrast ratios (4.5:1 minimum)",
+        "Design for touch targets minimum 44x44px on mobile",
+        "Create responsive breakpoints at 640px, 768px, 1024px, 1280px",
+        "Use system fonts for better performance",
+        "Implement smooth transitions and micro-animations"
+      ],
+      "tools_mastery": {
+        "design_tokens": "Use JSON format for design system tokens",
+        "color_theory": "Apply 60-30-10 rule for color distribution",
+        "typography": "Establish clear hierarchy with font sizes and weights",
+        "spacing": "Use consistent spacing scale (4, 8, 12, 16, 24, 32, 48, 64)"
+      },
+      "quality_criteria": {
+        "consistency": 95,
+        "accessibility": 100,
+        "responsiveness": 100,
+        "performance": 90
+      }
+    },
+    "frontend_developer": {
+      "best_practices": [
+        "Write semantic HTML5 markup",
+        "Use React hooks and functional components",
+        "Implement proper error boundaries",
+        "Optimize bundle size with code splitting",
+        "Use lazy loading for route-based components",
+        "Implement proper state management patterns",
+        "Write reusable and composable components",
+        "Follow DRY (Don't Repeat Yourself) principle"
+      ],
+      "code_standards": {
+        "naming": "Use camelCase for variables, PascalCase for components",
+        "structure": "Organize by feature, not file type",
+        "imports": "Group imports: React, libraries, components, utils, styles",
+        "props": "Use PropTypes or TypeScript for type checking"
+      },
+      "performance_targets": {
+        "first_contentful_paint": "< 1.8s",
+        "time_to_interactive": "< 3.9s",
+        "bundle_size": "< 200KB gzipped",
+        "lighthouse_score": "> 90"
+      }
+    },
+    "css_styling": {
+      "best_practices": [
+        "Use CSS custom properties for theming",
+        "Implement BEM methodology for class naming",
+        "Mobile-first media queries",
+        "Use flexbox and grid for layouts",
+        "Optimize CSS with purging unused styles",
+        "Group related properties together",
+        "Use CSS containment for performance",
+        "Implement critical CSS inlining"
+      ],
+      "optimization": {
+        "minification": true,
+        "autoprefixing": true,
+        "css_modules": true,
+        "tree_shaking": true
+      }
+    },
+    "mobile_optimization": {
+      "best_practices": [
+        "Implement service workers for offline functionality",
+        "Use responsive images with srcset",
+        "Optimize touch interactions",
+        "Implement app shell architecture",
+        "Use viewport meta tag correctly",
+        "Optimize for thumb-friendly navigation",
+        "Implement pull-to-refresh where appropriate",
+        "Test on real devices, not just emulators"
+      ],
+      "pwa_requirements": {
+        "manifest": true,
+        "service_worker": true,
+        "https": true,
+        "responsive": true,
+        "offline_capability": true
+      }
+    },
+    "performance_optimizer": {
+      "best_practices": [
+        "Implement aggressive code splitting",
+        "Use dynamic imports for heavy libraries",
+        "Optimize images with WebP format",
+        "Implement proper caching strategies",
+        "Use CDN for static assets",
+        "Minimize main thread work",
+        "Reduce JavaScript execution time",
+        "Eliminate render-blocking resources"
+      ],
+      "metrics_monitoring": [
+        "Core Web Vitals (LCP, FID, CLS)",
+        "Time to First Byte (TTFB)",
+        "Total Blocking Time (TBT)",
+        "Speed Index",
+        "Bundle size analysis"
+      ]
+    },
+    "api_integration": {
+      "best_practices": [
+        "Implement proper error handling",
+        "Use exponential backoff for retries",
+        "Cache API responses appropriately",
+        "Implement request debouncing",
+        "Use proper authentication patterns",
+        "Handle loading and error states",
+        "Implement optimistic updates",
+        "Use pagination for large datasets"
+      ],
+      "security": [
+        "Never expose API keys in frontend",
+        "Validate all inputs",
+        "Implement CORS properly",
+        "Use HTTPS for all requests",
+        "Sanitize user inputs"
+      ]
+    },
+    "testing_qa": {
+      "best_practices": [
+        "Write tests before implementation (TDD)",
+        "Achieve minimum 80% code coverage",
+        "Test user interactions, not implementation",
+        "Use data-testid attributes for test selection",
+        "Mock external dependencies",
+        "Test edge cases and error scenarios",
+        "Implement visual regression testing",
+        "Run tests in CI/CD pipeline"
+      ],
+      "test_types": {
+        "unit": "Test individual functions and components",
+        "integration": "Test component interactions",
+        "e2e": "Test complete user workflows",
+        "performance": "Test loading times and responsiveness",
+        "accessibility": "Test with screen readers and keyboard"
+      }
+    },
+    "seo_accessibility": {
+      "best_practices": [
+        "Use semantic HTML elements",
+        "Implement proper heading hierarchy",
+        "Add alt text to all images",
+        "Use ARIA labels appropriately",
+        "Implement proper keyboard navigation",
+        "Ensure sufficient color contrast",
+        "Add meta descriptions and title tags",
+        "Implement structured data markup"
+      ],
+      "seo_checklist": [
+        "Unique title tags for each page",
+        "Meta descriptions under 160 characters",
+        "Clean URL structure",
+        "XML sitemap",
+        "Robots.txt configuration",
+        "Canonical URLs",
+        "Open Graph tags",
+        "Twitter Card tags"
+      ]
+    },
+    "documentation": {
+      "best_practices": [
+        "Document all public APIs",
+        "Include usage examples",
+        "Keep documentation next to code",
+        "Use JSDoc or TypeScript for inline docs",
+        "Create README for each module",
+        "Document breaking changes",
+        "Include troubleshooting section",
+        "Maintain changelog"
+      ],
+      "structure": {
+        "overview": "High-level architecture description",
+        "getting_started": "Quick start guide",
+        "api_reference": "Detailed API documentation",
+        "examples": "Code examples and use cases",
+        "contributing": "Contribution guidelines"
+      }
+    },
+    "devops_deployment": {
+      "best_practices": [
+        "Automate everything possible",
+        "Use feature flags for gradual rollouts",
+        "Implement blue-green deployments",
+        "Monitor application performance",
+        "Set up error tracking",
+        "Use environment variables for config",
+        "Implement health checks",
+        "Automate dependency updates"
+      ],
+      "ci_cd_pipeline": {
+        "stages": ["lint", "test", "build", "deploy"],
+        "quality_gates": ["coverage > 80%", "no critical vulnerabilities", "performance budgets met"],
+        "deployment_strategy": "Progressive rollout with automatic rollback"
+      }
+    }
+  },
+  "collaboration_protocols": {
+    "communication": {
+      "format": "Structured JSON messages",
+      "channels": ["task_assignment", "status_update", "help_request", "completion_notice"],
+      "response_time": "< 100ms for acknowledgment"
+    },
+    "conflict_resolution": {
+      "strategy": "Priority-based with orchestrator mediation",
+      "merge_strategy": "Rebase and merge for clean history",
+      "testing": "All changes must pass tests before merge"
+    },
+    "knowledge_sharing": {
+      "documentation": "Update shared knowledge base after each task",
+      "patterns": "Share reusable patterns and components",
+      "lessons_learned": "Document failures and solutions"
+    }
+  },
+  "performance_benchmarks": {
+    "task_completion": {
+      "simple": "< 5 minutes",
+      "medium": "< 15 minutes",
+      "complex": "< 30 minutes"
+    },
+    "quality_scores": {
+      "code_quality": "> 85%",
+      "test_coverage": "> 80%",
+      "accessibility": "100%",
+      "performance": "> 90%"
+    },
+    "collaboration_metrics": {
+      "conflict_rate": "< 5%",
+      "help_request_resolution": "< 10 minutes",
+      "knowledge_sharing": "> 1 contribution per task"
+    }
+  }
+}
