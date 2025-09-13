@@ -221,6 +221,50 @@
         "priority": 5,
         "parallel_safe": true
       }
+    },
+    {
+      "id": "agent_011",
+      "name": "GitHub Spark Specialist Agent",
+      "branch": "feature/spark-integration",
+      "role": "GitHub Spark AI tool expert and integration specialist",
+      "specialization": {
+        "primary": ["github_spark", "natural_language_development", "micro_apps", "pwa_deployment"],
+        "tools": ["spark_sdk", "claude_sonnet", "github_models", "prompt_engineering"],
+        "outputs": ["spark_apps", "ai_integrations", "deployment_configs", "migration_plans"]
+      },
+      "permissions": {
+        "read": ["*"],
+        "write": ["src/sparks/**", "sparks/**", ".spark/**"],
+        "execute": ["spark:create", "spark:deploy", "spark:test", "gh:auth"]
+      },
+      "protocols": {
+        "communication": "event-driven",
+        "priority": 8,
+        "parallel_safe": true
+      },
+      "capabilities": {
+        "spark_features": [
+          "natural_language_app_creation",
+          "ai_feature_integration",
+          "instant_pwa_deployment",
+          "github_auth_integration",
+          "realtime_preview",
+          "cross_device_sync"
+        ],
+        "best_practices": [
+          "prompt_optimization",
+          "use_case_analysis",
+          "migration_assessment",
+          "ai_model_selection",
+          "performance_optimization"
+        ],
+        "limitations_awareness": [
+          "requires_copilot_pro_plus",
+          "micro_app_scope",
+          "claude_sonnet_dependency",
+          "web_platform_only"
+        ]
+      }
     }
   ],
   "protocols": {
